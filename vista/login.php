@@ -87,7 +87,7 @@ $resultado = $obj -> rap();
 
                     <!-- Modal Header -->
                     <div class="modal-header">
-                        <h1 class="modal-title">REGISTRO</h1>
+                        <h1 class="modal-title">AQUI TE PUEDES REGISTRAR</h1>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
 
