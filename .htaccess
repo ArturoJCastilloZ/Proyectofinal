@@ -1,0 +1,16 @@
+#regla para evitar el uso de .php
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(,*)$ $1.php
+
+
+#login
+RewriteRule ^login$ vista/login.php [L]
+RewriteRule ^home$ vista/home.php [L]
+RewriteRule ^subir$ vista/subir.php [L]
+RewriteRule ^inicio$ vista/inicio.php [L]
+
+php_value upload_max_filesize 10M
+php_value post_max_size 20M
+php_value max_execution_time 180
